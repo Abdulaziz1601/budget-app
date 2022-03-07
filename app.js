@@ -1,9 +1,9 @@
 const express = require('express');
-const accountsRouter = require('./account.js');
+const accountsRouter = require('./user.js');
 
 const app = express();
 
-    
+
 app.use(express.json());
 
 app.use('/users', accountsRouter);

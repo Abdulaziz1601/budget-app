@@ -35,6 +35,7 @@ router.post('/:id', (req, res) => {
             mail: req.body.mail,
             password: req.body.password,
             age: req.body.age,
+            role: req.body.role
         }
         
         users.push(user);
