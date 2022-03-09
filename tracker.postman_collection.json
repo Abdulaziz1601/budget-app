@@ -1,0 +1,171 @@
+{
+	"variables": [],
+	"info": {
+		"name": "tracker",
+		"_postman_id": "02d38d5a-3fb8-6ad7-7582-bd2543bd7e3a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/users",
+			"request": {
+				"url": "http://localhost:3000/users/2",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t \"mail\": \"new@gmail.com\",\n    \"password\": \"newPwd\",\n    \"age\": 30\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users",
+			"request": {
+				"url": "http://localhost:3000/users/2",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t \"mail\": \"new@gmail.com\",\n    \"password\": \"newPwd\",\n    \"age\": 30\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users/2",
+			"request": {
+				"url": "http://localhost:3000/users/4",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t \"mail\": \"new@gmail.com\",\n    \"password\": \"newPwd\",\n    \"age\": 30,\n    \"role\": \"USER\"\n}\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users/4",
+			"request": {
+				"url": "http://localhost:3000/users/4",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t \"mail\": \"new@gmail.com\",\n    \"password\": \"newPwd\",\n    \"age\": 30,\n    \"role\": \"USER\"\n}\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users/2",
+			"request": {
+				"url": "http://localhost:3000/users/2",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\n\t\"id\": 2,\n\t \"mail\": \"upd@gmail.com\",\n    \"password\": \"updPwd\",\n    \"age\": 20,\n    \"role\": \"USER\"\n}\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users",
+			"request": {
+				"url": "http://localhost:3000/users",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t \"mail\": \"upd@gmail.com\",\n    \"password\": \"updPwd\",\n    \"age\": 20,\n    \"role\": \"USER\"\n}\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users/2",
+			"request": {
+				"url": "http://localhost:3000/users/2",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t \"mail\": \"upd@gmail.com\",\n    \"password\": \"updPwd\",\n    \"age\": 20,\n    \"role\": \"USER\"\n}\n"
+				},
+				"description": "\t\t\t\t"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users",
+			"request": {
+				"url": "http://localhost:3000/users",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t \"mail\": \"upd@gmail.com\",\n    \"password\": \"updPwd\",\n    \"age\": 20,\n    \"role\": \"USER\"\n}\n"
+				},
+				"description": "\t\t\t\t"
+			},
+			"response": []
+		}
+	]
+}
