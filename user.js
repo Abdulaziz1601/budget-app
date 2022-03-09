@@ -2,11 +2,11 @@ const db = require('./db');
 const express = require('express');
 const router = express.Router();
 
-router.use(express.json()); // enabling to parse JSON
+router.use(express.json()); 
 
 const users = db.users;
 
-// GET users array
+
 
 router.get('/', (req, res) => {
     res.send(
@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
     );
 });
 
-// GET specific User
+
 
 router.get('/:id', (req, res) => {
     const user = users.find(item =>  item.id === parseInt(req.params.id));
@@ -26,7 +26,7 @@ router.get('/:id', (req, res) => {
     });
 });
 
-// Adding new User
+
 router.post('/:id', (req, res) => {
     const index = users.findIndex(item => item.id === req.params.id);
     if(index === -1) {
@@ -50,7 +50,7 @@ router.post('/:id', (req, res) => {
     
 });
 
-// Updating Users
+
 
 router.put('/:id', (req, res) => {
     const user = users.find(item => item.id === parseInt(req.params.id));
@@ -59,11 +59,11 @@ router.put('/:id', (req, res) => {
         res.status(404).send("The user with the given ID was not found");
     }
     users[req.params.id - 1] = req.body;  
-    // const newUser = req.body;
+    
     res.send(users[req.params.id - 1]);
 });
 
-// Deleting the user
+
 
 router.delete('/:id', (req, res) => {
     const userIndex = users.findIndex(item => item.id === parseInt(req.params.id));
